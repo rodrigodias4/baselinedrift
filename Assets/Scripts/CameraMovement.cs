@@ -7,6 +7,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private Transform playerTransform;
 
     private float xRotation = 0f;
+    private float yRotation = 90f;
 
     void Start()
     {
@@ -20,8 +21,11 @@ public class CameraMovement : MonoBehaviour
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        
+        yRotation += mouseX;
+        yRotation = Mathf.Clamp(yRotation, 0, 180f);
 
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f); // vertical rotation
-        playerTransform.Rotate(Vector3.up * mouseX);                        // horizontal rotation
+        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        playerTransform.rotation = Quaternion.Euler(0f, yRotation, 0f);
     }
 }
