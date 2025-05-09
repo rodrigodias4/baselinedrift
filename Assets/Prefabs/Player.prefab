@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8363529585193157156}
   - component: {fileID: 5024142524613721600}
   - component: {fileID: 3290655992930278403}
+  - component: {fileID: 2443508225606521344}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -152,6 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 4
   playerTransform: {fileID: 6419593351684083576}
+  canLookAround: 1
+  canInteract: 1
 --- !u!1 &9060203925053750492
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,5 +242,20 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 203219352948265032, guid: bd26c86abd176874a995fd8f650ee5ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2443508225606521344}
   m_SourcePrefab: {fileID: 100100000, guid: bd26c86abd176874a995fd8f650ee5ba, type: 3}
+--- !u!114 &2443508225606521344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031040412533992323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193fc60d207ea0a4f9e4ad99be271e8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

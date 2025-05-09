@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class CameraMovement : MonoBehaviour
+public class CameraManager : MonoBehaviour
 {
     [SerializeField] private float mouseSensitivity = 4f;
     [SerializeField] private Transform playerTransform;
 
     private float xRotation = 0f;
-    private float yRotation = 90f;
+    private float yRotation = 0f;
+    
+    public bool canLookAround;
+    public bool canInteract;
 
     void Start()
     {
@@ -16,16 +19,20 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
+        if (canLookAround) HandleMouseLook();
+    }
+    
+    private void HandleMouseLook()
+    {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * 100 * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * 100 * Time.deltaTime;
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        
-        yRotation += mouseX;
-        yRotation = Mathf.Clamp(yRotation, 0, 180f);
 
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        playerTransform.rotation = Quaternion.Euler(0f, yRotation, 0f);
+        yRotation += mouseX;
+        yRotation = Mathf.Clamp(yRotation, -90f, 90f);
+
+        transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
     }
 }
