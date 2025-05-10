@@ -19,7 +19,7 @@ public class Interactor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!(_cameraManager?.canInteract ?? false)) return;
+        if (!(_cameraManager?.currentCameraState?.canInteract ?? false)) return;
         InteractableCheck();
         InteractableDisplayHint();
         if (Input.GetKeyDown(KeyCode.E)) InteractableInteract();
