@@ -14,7 +14,6 @@ public class CameraStatePlayer : CameraStateStatic
         canLookAround = true;
         this.mouseSensitivity = cameraManager.mouseSensitivity;
         _cameraTransform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-        _cameraManager.onCameraBackToPlayer.Invoke();
     }
 
     public override void Update()

@@ -18,6 +18,12 @@ public class CameraStateTransition : CameraState
         _nextState = newState;
     }
 
+    public override void EnterState()
+    {
+        if (_nextState._cameraEnum == CameraEnum.PlayerCamera)
+            _cameraManager.onCameraBackToPlayer.Invoke();
+    }
+
     public override void Update()
     {
         Vector3 startPosition = _previousState._cameraTransform.position;
