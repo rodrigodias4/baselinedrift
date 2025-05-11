@@ -10,8 +10,10 @@ public class CameraStateMonitor : CameraStateStatic
     public override void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
+        {
             _cameraManager.ChangeCamera(new CameraStateTransition(_cameraManager, this,
                 new CameraStatePlayer(_cameraManager)));
+        }
     }
 
     public override void ExitState()

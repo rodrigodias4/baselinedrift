@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
@@ -21,6 +22,7 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private GameObject monitorCamera;
     public CameraState currentCameraState;
     public Dictionary<CameraEnum, GameObject> cameraTransforms;
+    public UnityEvent onCameraBackToPlayer;
 
     void Start()
     {
