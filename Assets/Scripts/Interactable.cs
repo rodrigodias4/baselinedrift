@@ -14,10 +14,12 @@ public abstract class Interactable : MonoBehaviour
     public virtual void DisplayHint()
     {
         if (hint) hint.SetActive(true);
+        if (hintUI) hintUI.SetActive(true);
     }
 
     public virtual void HideHint()
     {
         if (hint) hint.SetActive(false);
+        if (hintUI) hintUI.SetActive(false);
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine.Assertions;
 public class Interactor : MonoBehaviour
 {
     private Interactable currentInteractable = null;
-    private Camera camera;
+    private new Camera camera;
     private CameraManager _cameraManager;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
