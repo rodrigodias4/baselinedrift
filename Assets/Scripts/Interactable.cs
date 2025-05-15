@@ -3,7 +3,7 @@ using UnityEngine;
 public abstract class Interactable : MonoBehaviour
 {
     public GameObject hint;
-    public GameObject hintUI;
+    public UIInteractHint hintUI;
 
     public virtual void Interact()
     {
@@ -14,12 +14,12 @@ public abstract class Interactable : MonoBehaviour
     public virtual void DisplayHint()
     {
         if (hint) hint.SetActive(true);
-        if (hintUI) hintUI.SetActive(true);
+        if (hintUI) hintUI.Activate();
     }
 
     public virtual void HideHint()
     {
         if (hint) hint.SetActive(false);
-        if (hintUI) hintUI.SetActive(false);
+        if (hintUI) hintUI.Deactivate();
     }
 }

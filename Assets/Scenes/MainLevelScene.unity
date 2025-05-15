@@ -669,13 +669,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1275399419}
+  - component: {fileID: 1275399421}
+  - component: {fileID: 1275399420}
   m_Layer: 5
   m_Name: UIInteractHint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1275399419
 RectTransform:
   m_ObjectHideFlags: 0
@@ -697,6 +699,31 @@ RectTransform:
   m_AnchoredPosition: {x: 96.53, y: -429.825}
   m_SizeDelta: {x: 415.06, y: 54.350006}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1275399420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275399418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17efa60663e45064a994128905f13940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+--- !u!225 &1275399421
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275399418}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1416833368 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7171878697593406060, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
@@ -1191,7 +1218,7 @@ PrefabInstance:
     - target: {fileID: 7490782032373446798, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
       propertyPath: hintUI
       value: 
-      objectReference: {fileID: 1275399418}
+      objectReference: {fileID: 1275399420}
     - target: {fileID: 7925095674634326014, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
       propertyPath: m_Camera
       value: 
