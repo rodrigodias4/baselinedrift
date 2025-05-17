@@ -33,6 +33,8 @@ public class Interactor : MonoBehaviour
             //Debug.Log(hit.collider.name);
             if (hit.collider.TryGetComponent(out Interactable interactable))
             {
+                if (currentInteractable == interactable) return;
+                currentInteractable?.HideHint();
                 currentInteractable = interactable;
                 return;
             }

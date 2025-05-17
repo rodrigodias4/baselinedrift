@@ -712,6 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
+  tmp: {fileID: 2144522735}
 --- !u!225 &1275399421
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1127,6 +1128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 96668698962730175, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
+      propertyPath: hintUI
+      value: 
+      objectReference: {fileID: 1275399420}
     - target: {fileID: 1913495760373300238, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
       propertyPath: hintUI
       value: 
@@ -1172,6 +1177,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7490782032373446798, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
+      propertyPath: hintUI
+      value: 
+      objectReference: {fileID: 1275399420}
+    - target: {fileID: 7752718413197923182, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
       propertyPath: hintUI
       value: 
       objectReference: {fileID: 1275399420}

@@ -1,16 +1,20 @@
 using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 [RequireComponent(typeof(CanvasGroup))]
 public class UIInteractHint : MonoBehaviour
 {
     private CanvasGroup canvasGroup;
     public bool isActive;
+    public TextMeshProUGUI tmp;
     private const float fadeDuration = 0.2f;
     private void Start()
     {
          canvasGroup = GetComponent<CanvasGroup>();
+         Assert.IsNotNull(canvasGroup);
     }
 
     public void Activate()
@@ -21,6 +25,11 @@ public class UIInteractHint : MonoBehaviour
     public void Deactivate()
     {
         StartCoroutine(FadeOut());
+    }
+
+    public void SetText(string text)
+    {
+        tmp.text = text;
     }
 
     public IEnumerator FadeIn()
