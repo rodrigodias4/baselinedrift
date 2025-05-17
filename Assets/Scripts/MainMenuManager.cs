@@ -36,7 +36,7 @@ public class MainMenuManager : MonoBehaviour
             fadeImage.color = new Color(0, 0, 0, timeElapsed / fadeDuration);
             yield return null;
         }
-        fadeImage.color = new Color(0, 0, 0, 0);
+        fadeImage.color = new Color(0, 0, 0, 1);
         
         SceneManager.LoadSceneAsync(1);
     }
