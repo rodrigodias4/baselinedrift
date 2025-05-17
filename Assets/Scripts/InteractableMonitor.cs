@@ -22,10 +22,18 @@ public class InteractableMonitor : Interactable
 
     public void EnableTask()
     {
-        monitorVideo.clip = videoClips[1];
+        SetVideo(1);
         task.SetActive(true);
         taskEyeMonitorPupilSine = transform.GetComponentInChildren<TaskEyeMonitorPupilSine>();
         taskEyeMonitorPupilSine.SetTaskActive(true);
+    }
+    
+    public void DisableTask()
+    {
+        SetVideo(0);
+        taskEyeMonitorPupilSine = transform.GetComponentInChildren<TaskEyeMonitorPupilSine>();
+        taskEyeMonitorPupilSine.SetTaskActive(false);
+        task.SetActive(false);
     }
 
     public void SetVideo(int video)

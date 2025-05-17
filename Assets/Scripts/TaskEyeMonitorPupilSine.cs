@@ -34,6 +34,12 @@ public class TaskEyeMonitorPupilSine : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        InitializeTask();
+    }
+
+    public void InitializeTask()
+    {
+        Debug.Log("Task Eye Monitor Reset");
         if (factorRandomizer > 0) RandomizeFactors();
         CreatePoints();
     }
