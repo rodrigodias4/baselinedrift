@@ -77,7 +77,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: b10abbfff4d07bb4eb4d34b47f035363, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -155,13 +155,26 @@ MonoBehaviour:
   cameraTransitionDuration: 1
   playerCamera: {fileID: 0}
   monitorCamera: {fileID: 0}
+  notepadCamera: {fileID: 0}
   onCameraBackToPlayer:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InteractableMonitor, Assembly-CSharp
-        m_MethodName: DisableTask
+        m_TargetAssemblyTypeName: SkyLightManager, Assembly-CSharp
+        m_MethodName: Undim
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TaskEyeMonitorPupilSine, Assembly-CSharp
+        m_MethodName: SetTaskActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -1055,17 +1055,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1416833368}
     - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
+      propertyPath: notepadCamera
+      value: 
+      objectReference: {fileID: 2491943027336900008}
     - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
       propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1074,42 +1066,6 @@ PrefabInstance:
       propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1960973125}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Undim
-      objectReference: {fileID: 0}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetTaskActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SkyLightManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: TaskEyeMonitorPupilSine, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 467718254588357322, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: onCameraBackToPlayer.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 2743689097737384335, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.918
@@ -1150,10 +1106,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4234531132379405359, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
-      propertyPath: m_TargetTexture
-      value: 
-      objectReference: {fileID: 8400000, guid: b10abbfff4d07bb4eb4d34b47f035363, type: 2}
     - target: {fileID: 8717777925032914801, guid: a078f6d62db150146af0c0bf07eda739, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -1175,6 +1127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 1913495760373300238, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
+      propertyPath: hintUI
+      value: 
+      objectReference: {fileID: 1275399420}
     - target: {fileID: 3941676101832044202, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1228,6 +1184,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
+--- !u!1 &2491943027336900008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 174701613630770750, guid: 153b48bf7eafe8b4e9fd87f357122dca, type: 3}
+  m_PrefabInstance: {fileID: 2491943027336900006}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3260096654847680749
 PrefabInstance:
   m_ObjectHideFlags: 0

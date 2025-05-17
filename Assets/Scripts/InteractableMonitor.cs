@@ -6,19 +6,11 @@ using UnityEngine.Video;
 
 public class InteractableMonitor : Interactable
 {
-    private GameObject mainCamera;
-    private CameraManager cameraManager;
     [SerializeField] private GameObject task;
     [SerializeField] private VideoPlayer monitorVideo;
     [SerializeField] private List<VideoClip> videoClips;
     [SerializeField] private SkyLightManager skyLightManager;
     private TaskEyeMonitorPupilSine taskEyeMonitorPupilSine;
-    
-    public void Start()
-    {
-        mainCamera = GameObject.Find("Main Camera");
-        cameraManager = mainCamera.GetComponent<CameraManager>();
-    }
 
     public override void Interact()
     {

@@ -12,6 +12,7 @@ public enum CameraEnum
     PlayerCamera,
     MonitorCamera,
     TransitionCamera,
+    NotepadCamera,
 }
 
 public class CameraManager : MonoBehaviour
@@ -20,6 +21,7 @@ public class CameraManager : MonoBehaviour
     public float cameraTransitionDuration;
     [SerializeField] private GameObject playerCamera;
     [SerializeField] private GameObject monitorCamera;
+    [SerializeField] private GameObject notepadCamera;
     public CameraState currentCameraState;
     public Dictionary<CameraEnum, GameObject> cameraTransforms;
     public UnityEvent onCameraBackToPlayer;
@@ -33,6 +35,7 @@ public class CameraManager : MonoBehaviour
         {
             { CameraEnum.PlayerCamera, playerCamera },
             { CameraEnum.MonitorCamera, monitorCamera },
+            { CameraEnum.NotepadCamera, notepadCamera }
         };
         currentCameraState = new CameraStatePlayer(this);
         currentCameraState.EnterState();
