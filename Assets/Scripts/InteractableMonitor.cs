@@ -32,7 +32,7 @@ public class InteractableMonitor : Interactable
     {
         SetVideo(0);
         taskEyeMonitorPupilSine = transform.GetComponentInChildren<TaskEyeMonitorPupilSine>();
-        taskEyeMonitorPupilSine.SetTaskActive(false);
+        taskEyeMonitorPupilSine?.SetTaskActive(false);
         task.SetActive(false);
     }
 
